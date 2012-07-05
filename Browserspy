@@ -4,21 +4,46 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://browserspy.dk/" />
-<title>Browserspy: Windows Media Player</title>
+<title>Browserspy: Bandwidth</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Browserspy: Windows Media Player</td></tr>
+<tr><td rowspan="1" colspan="3">Browserspy: Bandwidth</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/window.php</td>
+	<td>/bandwidth.php</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=Windows Media Player</td>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;AuditMyPC Java screenshot&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//img[@alt='AuditMyPC Java screenshot'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Speedtest.net screenshot&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Speedtest.net</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=AuditMyPC.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a[title=&quot;Speed Test&quot;]</td>
 	<td></td>
 </tr>
 
